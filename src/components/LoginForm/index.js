@@ -79,6 +79,7 @@ const LoginForm = () => {
           onChange={e => setPassword(e.target.value)}
           placeholder="password"
           id="password"
+          autoComplete="current-password"
         />
 
         <button className="form-submit-button" type="submit">

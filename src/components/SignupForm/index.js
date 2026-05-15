@@ -93,6 +93,7 @@ const SignupForm = () => {
           placeholder="password"
           id="password"
           required
+          autoComplete="new-password"
         />
 
         <button className="signup-form-button" type="submit">
