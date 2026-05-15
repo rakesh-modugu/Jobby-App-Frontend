@@ -1,6 +1,6 @@
-import { useState } from 'react'
+import {useState} from 'react'
 import Cookies from 'js-cookie'
-import { Redirect, useHistory, Link } from 'react-router-dom'
+import {Redirect, useHistory, Link} from 'react-router-dom'
 import './index.css'
 
 const websiteLogoInForm =
@@ -15,7 +15,7 @@ const SignupForm = () => {
   const history = useHistory()
 
   const onSubmitSuccess = jwtToken => {
-    Cookies.set('jwt_token', jwtToken, { expires: 30, path: '/' })
+    Cookies.set('jwt_token', jwtToken, {expires: 30, path: '/'})
     history.replace('/')
   }
 
@@ -26,7 +26,7 @@ const SignupForm = () => {
 
   const onSubmitSignupForm = async event => {
     event.preventDefault()
-    const userDetails = { username, password, name }
+    const userDetails = {username, password, name}
     const signupApiUrl = 'https://jobby-app-backend-1.onrender.com/register'
     const options = {
       method: 'POST',
