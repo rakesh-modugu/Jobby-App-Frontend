@@ -1,0 +1,112 @@
+.signup-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #000000;
+}
+
+.signup-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 450px;
+  background-color: #272727;
+  box-shadow: 0px 4px 16px 0px #000000;
+}
+
+@media screen and (max-width: 768px) {
+  .signup-form-container {
+    width: 90%;
+    max-width: 350px;
+    padding: 20px;
+  }
+}
+
+.form-logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 24px;
+}
+
+.form-logo-container img {
+  width: 120px;
+}
+
+.signup-form-container .form-label {
+  margin-bottom: 8px;
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: #f8fafc;
+  align-self: flex-start;
+}
+
+.signup-form-container .form-input {
+  font-size: 14px;
+  height: 40px;
+  border: 1px solid #475569;
+  background-color: transparent;
+  color: #f1f5f9;
+  border-radius: 4px;
+  margin-top: 5px;
+  padding: 8px 16px;
+  outline: none;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.signup-form-container .form-input:focus {
+  border-color: #4f46e5;
+}
+
+.signup-form-button {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 14px;
+  color: #ffffff;
+  height: 40px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  background-color: #4f46e5;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.signup-form-button:hover {
+  background-color: #4338ca;
+}
+
+.signup-error-message {
+  align-self: flex-start;
+  font-family: 'Roboto';
+  font-size: 12px;
+  line-height: 16px;
+  color: #ff0b37;
+  margin-top: 5px;
+}
+
+.login-link-text {
+  font-family: 'Roboto';
+  font-size: 14px;
+  color: #f8fafc;
+  margin-top: 15px;
+}
+
+.login-link-text a {
+  color: #4f46e5;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.login-link-text a:hover {
+  text-decoration: underline;
+}
