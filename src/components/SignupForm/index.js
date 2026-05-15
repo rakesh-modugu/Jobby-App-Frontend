@@ -27,7 +27,7 @@ const SignupForm = () => {
   const onSubmitSignupForm = async event => {
     event.preventDefault()
     const userDetails = {username, password, name}
-    const signupApiUrl = 'http://localhost:5000/register'
+    const signupApiUrl = 'https://jobby-app-backend-1.onrender.com/register'
     const options = {
       method: 'POST',
       headers: {

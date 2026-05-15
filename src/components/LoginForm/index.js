@@ -28,7 +28,7 @@ const LoginForm = () => {
   const onSubmitLoginForm = async event => {
     event.preventDefault()
     const userDetails = {username, password}
-    const loginApiUrl = 'http://localhost:5000/login'
+    const loginApiUrl = 'https://jobby-app-backend-1.onrender.com/login'
     const options = {
       method: 'POST',
       headers: {

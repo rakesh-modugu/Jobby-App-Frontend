@@ -19,7 +19,7 @@ const AboutJobItem = () => {
   const getJobData = async () => {
     setApiStatus('IN_PROGRESS')
     const jwtToken = Cookies.get('jwt_token')
-    const jobDetailsApiUrl = `http://localhost:5000/jobs/${id}`
+    const jobDetailsApiUrl = `https://jobby-app-backend-1.onrender.com/jobs/${id}`
     const optionsJobData = {
       headers: {Authorization: `Bearer ${jwtToken}`},
       method: 'GET',

@@ -34,7 +34,7 @@ const AllJobs = () => {
   const getProfileDetails = async () => {
     setApiStatus('IN_PROGRESS')
     const jwtToken = Cookies.get('jwt_token')
-    const profileApiUrl = 'http://localhost:5000/profile'
+    const profileApiUrl = 'https://jobby-app-backend-1.onrender.com/profile'
     const optionsProfile = {
       headers: {Authorization: `Bearer ${jwtToken}`},
       method: 'GET',
@@ -60,7 +60,7 @@ const AllJobs = () => {
   const getJobDetails = async () => {
     setApiJobsStatus('IN_PROGRESS')
     const jwtToken = Cookies.get('jwt_token')
-    const jobsApiUrl = `http://localhost:5000/jobs?employment_type=${checkboxInputs}&minimum_package=${radioInput}&search=${searchInput}`
+    const jobsApiUrl = `https://jobby-app-backend-1.onrender.com/jobs?employment_type=${checkboxInputs}&minimum_package=${radioInput}&search=${searchInput}`
     const options = {
       headers: {Authorization: `Bearer ${jwtToken}`},
       method: 'GET',
